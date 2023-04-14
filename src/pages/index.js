@@ -10,7 +10,7 @@ export default function Home() {
   //   setActive(!active);
   // };
   return (
-    <div className="bg-blue-500">
+    <div className=" w-full">
       {/* <Navbar /> */}
       <Hero />
       {/* <NavbarMenu /> */}
