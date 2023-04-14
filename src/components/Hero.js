@@ -15,7 +15,7 @@ export default function Hero() {
         priority={true}
       />
       <div className="bg-black w-full h-full absolute top-0 left-0 opacity-25 bg-cover bg-center"></div>
-      <div className="absolute max-w-md lg:max-w-2xl 2xl:max-w-4xl top-5  left-10">
+      <div className="absolute max-w-md lg:max-w-2xl 2xl:max-w-4xl top-5 ml-3 md:left-5 lg:left-10">
         <h2 className=" tracking-wide text-3xl lg:text-5xl mb-2 font-base  text-slate-200 ">
           Kerja Di Kapal Pesiar ??
         </h2>
