@@ -2,6 +2,7 @@
 // import NavbarMenu from "../components/NavbarMenu";
 import Image from "next/image";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 
 export default function Home() {
   // const [active, setActive] = useState(false);
@@ -13,6 +14,7 @@ export default function Home() {
     <div className=" w-full">
       {/* <Navbar /> */}
       <Hero />
+      <About />
       {/* <NavbarMenu /> */}
       {/* <div className="h-screen flex-col w-full bg-blue-500 flex justify-center items-center">
         <Image
