@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Program() {
   return (
-    <div className="pt-5 pb-28 bg-blue-100">
+    <div className="pt-5 bg-blue-100">
       <h1 className="text-center px-14 text-slate-800 text-3xl">
         Program Unggulan di Eli Crew
       </h1>
@@ -151,19 +151,19 @@ export default function Program() {
             Sistem Pembayaran
           </h2>
           <ul className="text-center px-5 my-1">
-            <li className="my-1">
+            <li className="my-2">
               Biaya registrasi pendaftaran Rp. 500 dibayarkan pada saat
               mendaftar
             </li>
-            <li className="my-1">
+            <li className="my-2">
               Biaya Awal Pelatihan Rp. 6.500.000,- harus sudah dibayar paling
               lambat dihari pertama pelatihan dimulai
             </li>
-            <li className="my-1">
+            <li className="my-2">
               Angsuran II Rp. 2.500.000,- dibayarkan diawal bulan kedua masa
               pelatihan
             </li>
-            <li className="my-1">
+            <li className="my-2">
               Angsuran III Rp. 2.500.000,- harus sudah dilunasi di awal bulan
               ketiga masa pelatihan ( paling lambat sebelum masa OJT di hotel )
             </li>
@@ -283,7 +283,7 @@ export default function Program() {
             Lama Pendidikan ( 6 Bulan )
           </h2>
           <p className="text-center">
-            2 Bulan teori di kelas + 2 Bulan OJT / Magang di hotel bintang 3
+            2 Bulan teori di kelas + 3 Bulan OJT / Magang di hotel bintang 3
             atau 4, setelah itu 1 bulan persiapan menghadapi interview dengan
             agen kapal pesiar
           </p>
@@ -336,19 +336,19 @@ export default function Program() {
             Sistem Pembayaran
           </h2>
           <ul className="text-center px-5 my-1">
-            <li className="my-1">
-              Biaya registrasi pendaftaran Rp. 500 dibayarkan pada saat
+            <li className="my-2">
+              Biaya registrasi pendaftaran Rp. 500.000 dibayarkan pada saat
               mendaftar
             </li>
-            <li className="my-1">
-              Biaya Awal Pelatihan Rp. 6.500.000,- harus sudah dibayar paling
+            <li className="my-2">
+              Biaya Awal Pelatihan Rp. 10.500.000,- harus sudah dibayar paling
               lambat dihari pertama pelatihan dimulai
             </li>
-            <li className="my-1">
+            <li className="my-2">
               Angsuran II Rp. 2.500.000,- dibayarkan diawal bulan kedua masa
               pelatihan
             </li>
-            <li className="my-1">
+            <li className="my-2">
               Angsuran III Rp. 2.500.000,- harus sudah dilunasi di awal bulan
               ketiga masa pelatihan ( paling lambat sebelum masa OJT di hotel )
             </li>

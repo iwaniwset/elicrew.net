@@ -5,6 +5,8 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Elicrew from "@/components/Elicrew";
 import Program from "@/components/Program";
+import Gallery from "@/components/Gallery";
+// import Footer from "@/components/Footer";
 
 export default function Home() {
   // const [active, setActive] = useState(false);
@@ -19,6 +21,8 @@ export default function Home() {
       <About />
       <Elicrew />
       <Program />
+      <Gallery />
+      {/* <Footer /> */}
     </div>
   );
 }

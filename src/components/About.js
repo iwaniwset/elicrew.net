@@ -38,7 +38,7 @@ export default function About() {
             jam belajar dari Senin s/d Jumat
           </p>
           <p className="text-center tracking-wider text-slate-300">
-            Jam 09.30 WIB s/d 14.30 WIB
+            Jam 09.00 WIB s/d 14.30 WIB
           </p>
         </div>
       </div>
