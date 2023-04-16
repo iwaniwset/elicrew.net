@@ -152,7 +152,7 @@ export default function Program() {
           </h2>
           <ul className="text-center px-5 my-1">
             <li className="my-2">
-              Biaya registrasi pendaftaran Rp. 500 dibayarkan pada saat
+              Biaya registrasi pendaftaran Rp. 500.000 dibayarkan pada saat
               mendaftar
             </li>
             <li className="my-2">
