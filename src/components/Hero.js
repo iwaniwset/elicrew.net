@@ -30,9 +30,13 @@ export default function Hero() {
         <h1 className="text-4xl xl:text-6xl mb-2 text-center text text-amber-400 tracking-wide ">
           Eli Crew Cilacap
         </h1>
-        <h2 className="text-2xl xl:text-4xl text-center text text-slate-300 tracking-wider ">
+        <h2 className="text-2xl   mb-3 xl:text-4xl text-center text text-slate-300 tracking-wider ">
           Pelatihan Singkat Calon Crew Perhotelan & Kapal Pesiar
         </h2>
+        <h3 className="text-center py-2 px-4 bg-slate-950 shadow-xl text-amber-500 tracking-wide">
+          Jl. Kelud No.6, Cilacap, Sidanegara, <br></br> Kec. Cilacap Tengah,
+          Kabupaten Cilacap, <br></br>Jawa Tengah 53223
+        </h3>
       </div>
     </div>
   );

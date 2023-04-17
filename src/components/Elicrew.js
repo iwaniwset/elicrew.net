@@ -17,8 +17,7 @@ export default function Elicrew() {
     },
     {
       image: "/img/imgeli/handshake.png",
-      benefit:
-        "Jalinan relasi yang sangat luas untuk hampir seluruh kapal pesiar",
+      benefit: "Jalinan relasi yang sangat luas hampir di seluruh kapal pesiar",
     },
     {
       image: "/img/imgeli/staff.png",
@@ -27,8 +26,7 @@ export default function Elicrew() {
     },
     {
       image: "/img/imgeli/passport.png",
-      benefit:
-        "Dibantu dalam proses document terkait BST, Seaman Book Passport dll",
+      benefit: "Dibantu proses document terkait BST, Seaman Book Passport",
     },
     {
       image: "/img/imgeli/money.png",
