@@ -122,7 +122,7 @@ export default function Gallery() {
       <h1 className="py-5 tracking-wide text-3xl text-slate-800 text-center">
         Gallery
       </h1>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 self-center">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 self-center">
         {images.map((image, index) => (
           <div key={index}>
             <Image

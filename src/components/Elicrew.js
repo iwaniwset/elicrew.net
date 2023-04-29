@@ -58,9 +58,12 @@ export default function Elicrew() {
               height={500}
               quality={100}
               alt="img"
+              className="pt-2"
             />
-            <div className="">
-              <h1 className="p-2 text-center text-slate-800">{user.benefit}</h1>
+            <div className="pt-1">
+              <h1 className="p-1 h-24 text-center text-slate-800">
+                {user.benefit}
+              </h1>
             </div>
           </div>
         ))}
