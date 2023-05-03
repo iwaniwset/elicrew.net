@@ -15,7 +15,7 @@ export default function Hero() {
         autoplay: true,
         pauseOnHover: false,
         resetProgress: false,
-        arrows: true,
+        arrows: false,
         pagination: false,
       }}
       aria-label="My Favorite Images"
@@ -64,11 +64,17 @@ export default function Hero() {
         <div className="bg-black w-full h-full absolute top-0 left-0 opacity-25 bg-cover bg-center"></div>
 
         <div className="absolute top-5 w-full px-5 left-1/2 -translate-x-1/2">
-          <h1 className="text-4xl xl:text-6xl mb-2 text-center text text-sky-900 tracking-wide ">
+          <h1 className="text-4xl xl:text-6xl md:text-5xl mb-3 text-center text text-sky-900 tracking-wide ">
             Eli Crew Cilacap
           </h1>
-          <h2 className="text-2xl   mb-3 xl:text-4xl text-center text text-slate-900 tracking-wider ">
-            SoLution for Success In Hotel & Cruise
+          <h2 className="text-2xl md:text-3xl mb-3 xl:text-4xl text-center text text-slate-900 tracking-wider ">
+            SoLution for Success In Hotel & Cruise Line
+          </h2>
+        </div>
+        <div className="absolute bottom-3 w-full px-5 left-1/2 -translate-x-1/2">
+          <h2 className="text-2xl md:px-10 md:text-3xl px-1 mb-3 xl:text-4xl text-center text text-amber-300 tracking-wider 2xl:text-left 2xl:px-2 2xl:max-w-lg 2xl:tracking-widest 2xl:leading-snug 2xl:text-[2.5rem]">
+            Pusat Pelatihan Bahasa Inggris, Perhotelan, & Kapal Pesiar Terbaik
+            di Cilacap
           </h2>
         </div>
       </SplideSlide>
@@ -83,12 +89,11 @@ export default function Hero() {
           priority={true}
         />
         <div className="bg-black w-full h-full absolute top-0 left-0 opacity-25 bg-cover bg-center"></div>
-
-        <div className="absolute bottom-5 w-full px-5 left-1/2 -translate-x-1/2">
+        <div className="absolute bottom-5 2xl:bottom-0 w-full px-5 left-1/2 -translate-x-1/2">
           <h1 className="text-4xl xl:text-6xl mb-2 text-center text text-sky-50 tracking-wide ">
             Eli Crew Cilacap
           </h1>
-          <h2 className="text-xl   mb-3 xl:text-4xl text-center text text-amber-500 tracking-wider ">
+          <h2 className="text-xl md:text-3xl 2xl:px-14 2xl:leading-snug lg:leading-snug mb-3 xl:text-4xl text-center text text-amber-500 tracking-wider ">
             Jl. Kelud No.6, Cilacap, Sidanegara, Kec. Cilacap Tengah, Kabupaten
             Cilacap, Jawa Tengah 53223
           </h2>

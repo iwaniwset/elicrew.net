@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function NavbarMenu() {
   return (
-    <div className="w-full bg-[#0065C0] py-4 px-2 flex flex-col justify-end">
+    <div className="w-full bg-[#0065C0]  py-4 px-2 flex flex-col justify-end">
       <div className="flex gap-2 justify-end">
         <Image
           src={"/img/whatsapp.png"}

@@ -48,7 +48,7 @@ export default function Elicrew() {
       <div className="grid grid-cols-2 gap-2 px-2 py-2">
         {why.map((user, index) => (
           <div
-            className="aspect-[3/4] p-3 shadow-xl bg-sky-100 flex flex-col justify-center items-center "
+            className="aspect-[3/4] p-3 shadow-xl bg-slate-50 flex flex-col justify-center items-center "
             key={index}
           >
             {/* <img src={user.image} alt="" className="" /> */}
