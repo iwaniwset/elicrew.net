@@ -5,9 +5,10 @@ export default function About() {
   return (
     <div className="relative">
       <div className="flex z-10  flex-col justify-center items-center px-3 py-4">
-        <h1 className="text-2xl text-sky-950 mb-2 border-b-4 border-sky-900 ">
-          Ayo Gabung di Eli Crew !!!
+        <h1 className="text-2xl text-sky-950 mb-2  text-center border-sky-900 ">
+          Ayo Gabung Awali Karirmu bersama Eli Crew Cilacap!!!
         </h1>
+        <hr className="w-14 h-2 bg-primary rounded-md" />
         <p className="text-sky-700 text-center tracking-wide">
           Dengan metode Khusus kami yang efektif dan terintegrasi, kami pandu
           anda untuk dapat{" "}

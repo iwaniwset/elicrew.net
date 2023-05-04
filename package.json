@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^13.3.4",
     "@react-google-maps/api": "^2.18.1",
     "@splidejs/react-splide": "^0.7.12",
     "dotenv": "^16.0.3",
@@ -16,8 +17,7 @@
     "flowbite-react": "^0.4.3",
     "next": "13.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typeface-anton": "^1.1.13"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

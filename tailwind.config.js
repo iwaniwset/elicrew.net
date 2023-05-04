@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 // const textShadow = require("tailwindcss-textshadow");
+// const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./node_modules/flowbite-react/**/*.js",
@@ -29,18 +30,25 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
-      fontFamily: {
-        Poppins: "Poppins",
-        Anton: "Anton",
+      colors: {
+        primary: "#0065C0",
+        secondary: "#8D8741",
+        textBase: "text-amber-500",
+        textPrimary: "#BC986A",
+        textSecondary: "#FBEEC1",
+        thirdColor: "#DAAD86",
       },
+      // fontFamily: {
+      //   sofia: ["var(--font-sofia", ...fontFamily.sofia],
+      // },
       // textShadow: {
       //   default: textShadow["text-shadow-md"],
       // },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      // backgroundImage: {
+      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      //   "gradient-conic":
+      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // },
     },
   },
   plugins: [require("flowbite/plugin", "tailwindcss-textshadow")],

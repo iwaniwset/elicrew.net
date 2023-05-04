@@ -127,6 +127,7 @@ export default function Gallery() {
           <div key={index}>
             <Image
               src={image.imageUrl}
+              alt="imageGallery"
               width={100}
               quality={100}
               height={100}
