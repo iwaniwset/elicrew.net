@@ -8,7 +8,7 @@ export default function About() {
         <div className="flex items-center gap-4 pt-2 xl:pb-5">
           <hr className="w-14 mb-3 h-2 bg-textSecondary rounded-md" />
 
-          <h2 className="text-3xl pb-3 sm:pb-6 lg:text-4xl lg:pb-3 font-semibold text-textPrimary">
+          <h2 className="text-2xl pb-3 sm:pb-6 lg:text-4xl lg:pb-3 font-semibold text-textPrimary">
             Tentang Kami
           </h2>
           <hr className="w-14 mb-3 h-2 bg-textSecondary rounded-md" />

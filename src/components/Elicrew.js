@@ -27,11 +27,11 @@ export default function Elicrew() {
       image: "/img/imgeli/mentorshipWhite.png",
       title: "Didampingi",
       benefit:
-        "Pendampingan mulai dari masa latihan s/d diterima di kapal pesiar",
+        "Didampingi mulai dari masa latihan s/d diterima di kapal pesiar",
     },
     {
       image: "/img/imgeli/passportWhite.png",
-      title: "Document",
+      title: "Doc",
       benefit: "Dibantu proses document terkait BST, Seaman Book Passport",
     },
     {
@@ -52,7 +52,7 @@ export default function Elicrew() {
       <div className="flex w-full justify-center items-center gap-4 pt-2 xl:pb-5">
         <hr className="w-10 mb-3 h-2 bg-textPrimary rounded-md" />
 
-        <h2 className="text-3xl pb-3 sm:pb-6 lg:text-4xl lg:pb-3 font-semibold text-primary">
+        <h2 className="text-2xl pb-3 sm:pb-6 lg:text-4xl lg:pb-3 font-semibold text-primary">
           Mengapa ELi Crew
         </h2>
         <hr className="w-10 mb-3 h-2 bg-textPrimary rounded-md" />
@@ -76,7 +76,7 @@ export default function Elicrew() {
               <h1 className="p-1 font-bold tracking-wider mt-3 text-center text-3xl text-textPrimary sm:text-4xl 2xl:text-5xl">
                 {user.title}
               </h1>
-              <h2 className="text-center text-textSecondary sm:text-xl text-lg mt-2  lg:text-2xl 2xl:text-3xl 2xl:mt-4 2xl:leading-normal">
+              <h2 className="text-center px-2 text-textSecondary sm:text-xl text-lg mt-2  lg:text-2xl 2xl:text-3xl 2xl:mt-4 2xl:leading-normal">
                 {user.benefit}
               </h2>
             </div>
