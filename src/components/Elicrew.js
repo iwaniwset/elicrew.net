@@ -73,10 +73,10 @@ export default function Elicrew() {
               className=" pt-2 w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36"
             />
             <div className="pt-1">
-              <h1 className="p-1 font-bold tracking-wider mt-3 text-center text-3xl text-textPrimary sm:text-4xl 2xl:text-5xl">
+              <h1 className="p-1 font-bold tracking-wider mt-3 text-center text-2xl text-textPrimary sm:text-4xl 2xl:text-5xl">
                 {user.title}
               </h1>
-              <h2 className="text-center px-1 text-textSecondary sm:text-xl text-lg mt-2  lg:text-2xl 2xl:text-3xl 2xl:mt-4 2xl:leading-normal">
+              <h2 className="text-center text-textSecondary sm:text-xl text-lg mt-2  lg:text-2xl 2xl:text-3xl 2xl:mt-4 2xl:leading-normal">
                 {user.benefit}
               </h2>
             </div>
