@@ -20,7 +20,7 @@ export default function Hero() {
       }}
       aria-label="My Favorite Images"
     >
-      <SplideSlide className="w-full  h-[32rem] xl:h-[37rem] relative">
+      <SplideSlide className="w-full  h-[32rem] xl:h-[50rem] relative">
         {/* <img src="image1.jpg" alt="Image 1" /> */}
         <Image
           className="w-full h-full object-cover object-center"
@@ -35,7 +35,7 @@ export default function Hero() {
           <h2 className=" tracking-wide text-3xl lg:text-5xl font-extrabold mb-1 font-base  text-textSecondary ">
             Kerja Di Kapal Pesiar ??
           </h2>
-          <h1 className=" tracking-wide text-amber-400 text-8xl lg:text-8xl font-extrabold mb-2">
+          <h1 className=" tracking-wide text-amber-400 text-7xl lg:text-8xl font-extrabold mb-2">
             Gaji Dollar
           </h1>
           <h3 className=" tracking-wide font-bold text-textSecondary text-4xl lg:text-5xl">
@@ -46,12 +46,12 @@ export default function Hero() {
           <h1 className="text-4xl font-bold xl:text-6xl mb-2 text-center text text-amber-400 tracking-wide ">
             Eli Crew Cilacap
           </h1>
-          <h2 className="text-2xl font-bold mb-3 xl:text-4xl text-center text text-textSecondary tracking-wider ">
+          <h2 className="text-2xl font-bold mb-3 xl:text-4xl text-center text text-slate-300 tracking-wider ">
             Pelatihan Singkat Calon Crew Perhotelan & Kapal Pesiar
           </h2>
         </div>
       </SplideSlide>
-      <SplideSlide className="w-full  h-[32rem] xl:h-[37rem] relative">
+      <SplideSlide className="w-full  h-[32rem] xl:h-[50rem] relative">
         {/* <img src="image1.jpg" alt="Image 1" /> */}
         <Image
           className="w-full h-full object-cover object-center"
@@ -78,7 +78,7 @@ export default function Hero() {
           </h2>
         </div>
       </SplideSlide>
-      <SplideSlide className="w-full  h-[32rem] xl:h-[37rem] relative">
+      <SplideSlide className="w-full  h-[32rem] xl:h-[50rem] relative">
         {/* <img src="image1.jpg" alt="Image 1" /> */}
         <Image
           className="w-full h-full object-cover object-center"

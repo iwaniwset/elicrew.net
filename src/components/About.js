@@ -16,11 +16,11 @@ export default function About() {
         <h1 className="text-3xl font-bold md:text-4xl xl:text-5xl text-primary mb-1 xl:mb-3  text-center border-sky-900 ">
           Ayo Gabung Bersama
         </h1>
-        <h1 className="text-5xl md:text-7xl xl:text-8xl text-primary font-bold mb-3">
+        <h1 className="text-5xl md:text-7xl xl:text-8xl text-center text-primary font-bold mb-3">
           Eli Crew Cilacap
         </h1>
         <hr className="w-20 mb-5 h-2 bg-primary rounded-md" />
-        <p className="text-slate-500 font-light text-2xl sm:px-5 text-center sm:text-3xl leading-normal sm:leading-relaxed xl:text-4xl xl:leading-relaxed">
+        <p className="text-slate-500 font-light text-2xl sm:px-5 text-center sm:text-3xl leading-normal sm:leading-relaxed xl:text-4xl xl:leading-relaxed xl:pb-5">
           Eli Crew Cilacap merupakan lembaga pendidikan Profesional Di bidang
           Training Center Kapal Pesiar, Perhotelan dan Bahasa Inggris yang
           terletak di pusat kota Cilacap. Dengan adanya Eli diharapkan dapat
@@ -28,14 +28,14 @@ export default function About() {
           dan Kapal Pesiar
         </p>
       </div>
-      <div className="flex justify-center z-30 py-3  items-center gap-1 w-full bg-sky-900">
+      <div className="flex justify-center z-30 py-3 md:py-1 xl:py-2 items-center gap-1 w-full bg-primary">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
-          stroke="white"
-          className="w-14 h-14 "
+          stroke="#FBEEC1 "
+          className="w-20 h-w-20 md:w-28 sm:w-24 sm:h-24 md:h-28 xl:w-32 xl:h-32"
         >
           <path
             strokeLinecap="round"
@@ -44,10 +44,10 @@ export default function About() {
           />
         </svg>
         <div>
-          <p className="text-slate-200 tracking-wider">
+          <p className="sm:text-2xl xl:text-5xl  text-lg font-bold tracking-wider md:text-4xl text-textSecondary">
             jam belajar dari Senin s/d Jumat
           </p>
-          <p className="text-center tracking-wider text-slate-300">
+          <p className="sm:text-2xl xl:text-5xl text-center tracking-wider text-lg font-bold md:text-3xl  text-textSecondary">
             Jam 09.00 WIB s/d 14.30 WIB
           </p>
         </div>
