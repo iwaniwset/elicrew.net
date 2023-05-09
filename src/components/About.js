@@ -35,7 +35,7 @@ export default function About() {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="#FBEEC1 "
-          className="w-20 h-w-20 md:w-28 sm:w-24 sm:h-24 md:h-28 xl:w-32 xl:h-32"
+          className="w-16 h-16 md:w-28 sm:w-24 sm:h-24 md:h-28 xl:w-32 xl:h-32"
         >
           <path
             strokeLinecap="round"
@@ -44,7 +44,7 @@ export default function About() {
           />
         </svg>
         <div>
-          <p className="sm:text-2xl xl:text-5xl  text-lg font-bold tracking-wider md:text-4xl text-textSecondary">
+          <p className="sm:text-2xl xl:text-5xl  font-bold tracking-wider md:text-4xl text-textSecondary">
             jam belajar dari Senin s/d Jumat
           </p>
           <p className="sm:text-2xl xl:text-5xl text-center tracking-wider text-lg font-bold md:text-3xl  text-textSecondary">

@@ -6,12 +6,13 @@ export default function Elicrew() {
     {
       image: "/img/imgeli/bookNewWhite.png",
       title: "Materi",
-      benefit: "Materi pelatihan yang selalu diupdate sesusai kondisi terkini",
+      benefit:
+        "Materi pelatihan yang selalu diupdate sesusai kondisi materi terkini",
     },
     {
       image: "/img/imgeli/mentorshipWhite.png",
       title: "Mentor",
-      benefit: "Dipandu sarjana pendidikan bahasa asing yang bersertifikat",
+      benefit: "Dipandu sarjana pendidikan bahasa asing yang bersertifikat ",
     },
     {
       image: "/img/imgeli/hotelWhite.png",
@@ -21,10 +22,11 @@ export default function Elicrew() {
     {
       image: "/img/imgeli/relationshipWhite.png",
       title: "Relasi",
-      benefit: "Jalinan relasi yang sangat luas hampir di seluruh kapal pesiar",
+      benefit:
+        "Jalinan kemitraan yang sangat luas hampir di seluruh hotel dan kapal pesiar",
     },
     {
-      image: "/img/imgeli/mentorshipWhite.png",
+      image: "/img/imgeli/staffWhite.png",
       title: "Didampingi",
       benefit:
         "Didampingi mulai dari masa latihan s/d diterima di kapal pesiar",
@@ -40,7 +42,7 @@ export default function Elicrew() {
       benefit: "Bebas uang gedung, SPP , 3 seragam dan biaya praktek hotel",
     },
     {
-      image: "/img/imgeli/houseWhite.png",
+      image: "/img/imgeli/houseBone.png",
       title: "Mess",
       benefit:
         "Khusus untuk peserta luar kota disediakan mess, air dan listrik gratis",
@@ -57,14 +59,40 @@ export default function Elicrew() {
         </h2>
         <hr className="w-10 mb-3 h-2 bg-textPrimary rounded-md" />
       </div>
-      <div className="grid grid-cols-2 gap-2 px-2 py-2 md:grid-cols-3 xl:grid-cols-4">
+
+      <div className="container flex mx-auto flex-wrap mt-3 gap-2 md:gap-4">
+        {why.map((user, index) => (
+          <div
+            className="bg-primary max-w-[20rem] rounded-md shadow-md mx-auto p-4 sm:flex sm:max-w-lg sm:gap-3 md:max-w-3xl lg:max-w-md xl:max-w-xl 2xl:max-w-2xl "
+            key={index}
+          >
+            <Image
+              src={user.image}
+              width={500}
+              height={500}
+              quality={100}
+              alt="img"
+              className="w-36 sm:w-32 md:w-36 mx-auto object-cover bg-center"
+            />
+            <div className="p-3">
+              <h1 className="text-2xl font-semibold text-textSecondary tracking-wider md:text-4xl">
+                {user.title}
+              </h1>
+              <h4 className="text-xl md:text-2xl text-white mt-1">
+                {user.benefit}
+              </h4>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* <div className="grid grid-cols-2 gap-2 px-2 py-2 md:grid-cols-3 xl:grid-cols-4">
         {why.map((user, index) => (
           <div
             className="aspect-[3/4] sm:pt-5 p-3 shadow-xl bg-primary flex flex-col justify-start items-center "
             key={index}
           >
             {/* <img src={user.image} alt="" className="" /> */}
-            <Image
+      {/* <Image
               src={user.image}
               width={500}
               height={500}
@@ -81,8 +109,8 @@ export default function Elicrew() {
               </h2>
             </div>
           </div>
-        ))}
-      </div>
+        ))} */}
+      {/* </div> */}
     </div>
   );
 }
