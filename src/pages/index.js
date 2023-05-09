@@ -8,7 +8,7 @@ import Elicrew from "@/components/Elicrew";
 import Program from "@/components/Program";
 import Gallery from "@/components/Gallery";
 import Maps from "@/components/Maps";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   // const [active, setActive] = useState(false);
@@ -35,7 +35,7 @@ export default function Home() {
         <Program />
         <Gallery />
         <Maps />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

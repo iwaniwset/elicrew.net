@@ -141,7 +141,7 @@ export default function Gallery() {
     //     ))}
     //   </div>
     // </div>
-    <>
+    <div className="container">
       <div className="pt-5 lg:hidden">
         <div className="flex w-full justify-center items-center gap-4 pt-2 xl:pb-5">
           <hr className="w-10 mb-3 h-2 bg-textPrimary rounded-md" />
@@ -222,6 +222,6 @@ export default function Gallery() {
           ))}
         </Splide>
       </div>
-    </>
+    </div>
   );
 }

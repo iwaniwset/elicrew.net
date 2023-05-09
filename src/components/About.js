@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <div className="relative">
-      <div className="flex z-10  flex-col justify-center items-center px-3 py-4">
+      <div className="flex z-10 container  flex-col justify-center items-center px-3 py-4">
         <div className="flex items-center gap-4 pt-2 xl:pb-5">
           <hr className="w-14 mb-3 h-2 bg-textSecondary rounded-md" />
 
