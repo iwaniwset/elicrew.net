@@ -1,358 +1,204 @@
 import React from "react";
+import Image from "next/image";
+import Title from "./Title";
 
 export default function Program() {
+  const imageSvg = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="w-6 h-6 text-primary"
+    >
+      <path
+        fillRule="evenodd"
+        d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+  const imageSvg2 = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      class="w-6 h-6 text-amber-500"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+
+  const syaratRegs = [
+    "Pria Wanita usia 18 Tahun s/d 29 Tahun",
+    "Lulusan Minimal SMU/SMK/Paket C/Sederajat",
+    "Tidak mengidap penyakit kronis & Buta warna",
+    "Tinggi Wanita minimal 155cm & Pria 160 cm",
+  ];
+  const syaratAks = [
+    "Pria Wanita usia 21 Tahun s/d 29 Tahun",
+    "Lulusan Minimal SMU/SMK/Paket C/Sederajat",
+    "Tidak mengidap penyakit kronis & Buta warna",
+    "Tinggi Wanita minimal 155cm & Pria 160 cm",
+    "Berbahasa Inggris Aktif / Pernah mengikuti training",
+  ];
+  const BayarRegs = [
+    "Biaya registrasi pendaftaran Rp. 500.000 dibayarkan pada saat  mendaftar",
+    "Biaya Awal Pelatihan Rp. 6.500.000,- harus sudah dibayar paling lambat dihari pertama pelatihan dimulai",
+    "Angsuran II Rp. 2.500.000,- dibayarkan diawal bulan kedua masa pelatihan",
+    "Angsuran III Rp. 2.500.000,- harus sudah dilunasi di awal bulan  ketiga masa pelatihan ( paling lambat sebelum masa OJT di hotel)",
+  ];
+  const BayarAks = [
+    "Biaya registrasi pendaftaran Rp. 500.000 dibayarkan pada saat  mendaftar",
+    "Biaya Awal Pelatihan Rp. 10.500.000,- harus sudah dibayar paling lambat dihari pertama pelatihan dimulai",
+    "Angsuran II Rp. 2.500.000,- dibayarkan diawal bulan kedua masa pelatihan",
+    "Angsuran III Rp. 2.500.000,- harus sudah dilunasi di awal bulan  ketiga masa pelatihan ( paling lambat sebelum masa OJT di hotel)",
+  ];
+
+  const biayaRegs = [
+    "Biaya Registrasi : Rp. 500.000",
+    "Biaya Pelatihan : Rp. 11.500.000",
+  ];
+  const biayaAks = [
+    "Biaya Registrasi : Rp. 500.000",
+    "Biaya Pelatihan : Rp. 15.500.000",
+  ];
   return (
-    <div className="pt-5 bg-blue-100">
-      <h1 className="text-center px-14 text-slate-800 text-3xl">
-        Program Unggulan di Eli Crew
-      </h1>
-      <div className="px-2 pt-3">
-        <h1 className="py-2  text-center  tracking-wide text-slate-800 bg-red-500 text-2xl">
-          Program Reguler Setara D1
-        </h1>
-        <div className="py-2 ">
-          <h2 className="text-center text-xl text-blue-600">
-            Persyaratan Umum
-          </h2>
-          <div className="mt-2 text-base ">
-            <div className="flex justify-center my-1 items-center gap-1">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6 text-center"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
-                  />
-                </svg>
-              </span>
-              <p>Pria Wanita usia 18 Tahun s/d 29 Tahun</p>
+    <div className="bg-gradient-to-t from-primary to-sky-500 p-5">
+      <div className=" container mx-auto ">
+        <Title title="Program Unggulan Eli Crew" />
+
+        <div className="lg:flex gap-5 ">
+          <div className="">
+            <div className="bg-amber-500 rounded-tr-3xl">
+              <h1 className="bg-white rounded-bl-3xl rounded-tr-3xl px-4 py-3 text-slate-900 font-semibold text-lg uppercase md:text-3xl">
+                Program Reguler Setara D1
+              </h1>
             </div>
-            <div className="flex justify-center my-1 items-center gap-1">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6 text-center"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
-                  />
-                </svg>
-              </span>
-              <p>Lulusan Minimal SMU/SMK/Paket C/Sederajat</p>
+            <div className="bg-primary">
+              <div className="px-4 bg-amber-500 rounded-bl-3xl py-2">
+                <h1 className="mb-2 font-semibold text-lg md:text-3xl md:mb-4">
+                  Persyaratan Umum
+                </h1>
+                {syaratRegs.map((syaratReg, index) => (
+                  <ul key={index}>
+                    <li className="flex gap-1 text-sm md:text-xl mb-2 font-semibold items-start">
+                      {imageSvg}
+                      <span className="mt-[0.2rem] md:mt-0"> {syaratReg}</span>
+                    </li>
+                  </ul>
+                ))}
+              </div>
             </div>
-            <div className="flex justify-center my-1 items-center gap-1">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6 text-center"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
-                  />
-                </svg>
-              </span>
-              <p>Tidak mengidap penyakit kronis & Buta warna )</p>
+            <div className="bg-amber-500">
+              <div className="px-4 bg-primary rounded-bl-3xl pt-2 pb-3">
+                <h1 className="mb-2 font-semibold text-white semibold text-lg md:text-3xl">
+                  Lama Pendidikan (10 Bulan)
+                </h1>
+                <h2 className="text-justify text-white md:text-2xl">
+                  {" "}
+                  3 Bulan teori di kelas + 6 Bulan OJT / Magang di hotel bintang
+                  4 atau 5, setelah itu 1 bulan persiapan menghadapi interview
+                  dengan agen kapal pesiar
+                </h2>
+              </div>
             </div>
-            <div className="flex justify-center my-1 items-center gap-1">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6 text-center"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
-                  />
-                </svg>
-              </span>
-              <p>Tinggi Wanita minimal 155cm & Pria 160 cm</p>
+            <div className="bg-primary">
+              <div className="px-4 bg-amber-500 rounded-bl-3xl py-2">
+                <h1 className="mb-2 font-semibold text-xl uppercase md:text-3xl ">
+                  Biaya Registrasi
+                </h1>
+                {biayaRegs.map((biayaReg, index) => (
+                  <ul key={index}>
+                    <li className="flex gap-1 text-sm mb-2 font-semibold items-center">
+                      {imageSvg}
+                      <span className=" text-xl"> {biayaReg}</span>
+                    </li>
+                  </ul>
+                ))}
+              </div>
+            </div>
+
+            <div className="">
+              <div className="px-4 bg-primary  text-white rounded-bl-3xl py-2">
+                <h1 className="mb-2 font-semibold text-xl uppercase md:text-3xl">
+                  Biaya Registrasi
+                </h1>
+                {BayarRegs.map((biayaReg, index) => (
+                  <ul className="flex gap-2 mb-2" key={index}>
+                    <li className="">{imageSvg2}</li>
+                    <span className="md:text-xl"> {biayaReg}</span>
+                  </ul>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-        <div className="py-2 ">
-          <h2 className="text-center text-xl text-blue-600 pb-1">
-            Lama Pendidikan ( 10 Bulan )
-          </h2>
-          <p className="text-center">
-            3 Bulan teori di kelas + 6 Bulan OJT / Magang di hotel bintang 4
-            atau 5, setelah itu 1 bulan persiapan menghadapi interview dengan
-            agen kapal pesiar
-          </p>
-        </div>
-        <div className="py-2 ">
-          <h2 className="text-center text-xl text-blue-600 pb-1">
-            Biaya Pendidikan
-          </h2>
-          <div>
-            <div className="flex justify-center gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
 
-              <p className="text-xl">Biaya Registrasi : Rp. 500.000</p>
+          <div className="mt-5 lg:mt-0">
+            <div className="bg-amber-500 rounded-tr-3xl">
+              <h1 className="bg-white rounded-bl-3xl rounded-tr-3xl px-4 py-3 text-slate-900 font-semibold text-lg uppercase md:text-3xl">
+                Program Akselerasi / Percepatan
+              </h1>
             </div>
-            <div className="flex justify-center gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+            <div className="bg-primary">
+              <div className="px-4 bg-amber-500 rounded-bl-3xl py-2">
+                <h1 className="mb-2 font-semibold text-lg md:text-3xl md:mb-4">
+                  Persyaratan Umum
+                </h1>
+                {syaratAks.map((syaratAk, index) => (
+                  <ul key={index}>
+                    <li className="flex gap-1 text-sm md:text-xl mb-2 font-semibold items-start">
+                      {imageSvg}
+                      <span className="mt-[0.2rem] md:mt-0"> {syaratAk}</span>
+                    </li>
+                  </ul>
+                ))}
+              </div>
+            </div>
+            <div className="bg-amber-500">
+              <div className="px-4 bg-primary rounded-bl-3xl pt-2 pb-3">
+                <h1 className="mb-2 font-semibold text-white semibold text-lg md:text-3xl">
+                  Lama Pendidikan (10 Bulan)
+                </h1>
+                <h2 className="text-justify text-white md:text-2xl">
+                  {" "}
+                  2 Bulan teori di kelas + 3 Bulan OJT / Magang di hotel bintang
+                  3 atau 4, setelah itu 1 bulan persiapan menghadapi interview
+                  dengan agen kapal pesiar
+                </h2>
+              </div>
+            </div>
+            <div className="bg-primary">
+              <div className="px-4 bg-amber-500 rounded-bl-3xl py-2">
+                <h1 className="mb-2 font-semibold text-xl uppercase md:text-3xl">
+                  Biaya Registrasi
+                </h1>
+                {biayaAks.map((biayaAk, index) => (
+                  <ul key={index}>
+                    <li className="flex gap-1 text-sm mb-2 font-semibold items-center">
+                      {imageSvg}
+                      <span className=" text-xl"> {biayaAk}</span>
+                    </li>
+                  </ul>
+                ))}
+              </div>
+            </div>
 
-              <p className="text-xl">Biaya Pelatihan : Rp. 11.500.000</p>
+            <div className="px-4 bg-primary text-white rounded-bl-3xl py-2">
+              <h1 className="mb-2 font-semibold text-xl uppercase md:text-3xl">
+                Biaya Registrasi
+              </h1>
+              {BayarAks.map((bayarAk, index) => (
+                <ul className="flex gap-2 mb-2" key={index}>
+                  <li className="">{imageSvg2}</li>
+                  <span className="md:text-xl"> {bayarAk}</span>
+                </ul>
+              ))}
             </div>
           </div>
-        </div>
-        <div className="py-2 ">
-          <h2 className="text-center text-xl text-blue-600">
-            Sistem Pembayaran
-          </h2>
-          <ul className="text-center px-5 my-1">
-            <li className="my-2">
-              Biaya registrasi pendaftaran Rp. 500.000 dibayarkan pada saat
-              mendaftar
-            </li>
-            <li className="my-2">
-              Biaya Awal Pelatihan Rp. 6.500.000,- harus sudah dibayar paling
-              lambat dihari pertama pelatihan dimulai
-            </li>
-            <li className="my-2">
-              Angsuran II Rp. 2.500.000,- dibayarkan diawal bulan kedua masa
-              pelatihan
-            </li>
-            <li className="my-2">
-              Angsuran III Rp. 2.500.000,- harus sudah dilunasi di awal bulan
-              ketiga masa pelatihan ( paling lambat sebelum masa OJT di hotel )
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Kedua */}
-      <div className="px-2 pt-3 bg-slate-100">
-        <h1 className="py-2  text-center  tracking-wide text-slate-800 bg-blue-500 text-2xl">
-          Program Akselerasi / Percepatan
-        </h1>
-        <div className="py-2 ">
-          <h2 className="text-center text-xl text-blue-600">
-            Persyaratan Umum
-          </h2>
-          <div className="mt-2 text-base ">
-            <div className="flex justify-center my-1 items-center gap-1">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6 text-center"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
-                  />
-                </svg>
-              </span>
-              <p>Pria Wanita usia 21 Tahun s/d 29 Tahun</p>
-            </div>
-            <div className="flex justify-center my-1 items-center gap-1">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6 text-center"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
-                  />
-                </svg>
-              </span>
-              <p>Lulusan Minimal SMU/SMK/Paket C/Sederajat</p>
-            </div>
-            <div className="flex justify-center my-1 items-center gap-1">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6 text-center"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
-                  />
-                </svg>
-              </span>
-              <p>Tidak mengidap penyakit kronis & Buta warna )</p>
-            </div>
-            <div className="flex justify-center my-1 items-center gap-1">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6 text-center"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
-                  />
-                </svg>
-              </span>
-              <p>Tinggi Wanita minimal 155cm & Pria 160 cm</p>
-            </div>
-            <div className="flex justify-center my-1 items-center gap-1">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6 text-center"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
-                  />
-                </svg>
-              </span>
-              <p>Berbahasa Inggris Aktif / Pernah mengikuti Training</p>
-            </div>
-          </div>
-        </div>
-        <div className="py-2 ">
-          <h2 className="text-center text-xl text-blue-600 pb-1">
-            Lama Pendidikan ( 6 Bulan )
-          </h2>
-          <p className="text-center">
-            2 Bulan teori di kelas + 3 Bulan OJT / Magang di hotel bintang 3
-            atau 4, setelah itu 1 bulan persiapan menghadapi interview dengan
-            agen kapal pesiar
-          </p>
-        </div>
-        <div className="py-2 ">
-          <h2 className="text-center text-xl text-blue-600 pb-1">
-            Biaya Pendidikan
-          </h2>
-          <div>
-            <div className="flex justify-center gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-
-              <p className="text-xl">Biaya Registrasi : Rp. 500.000</p>
-            </div>
-            <div className="flex justify-center gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-
-              <p className="text-xl">Biaya Pelatihan : Rp. 15.500.000</p>
-            </div>
-          </div>
-        </div>
-        <div className="py-2 ">
-          <h2 className="text-center text-xl text-blue-600">
-            Sistem Pembayaran
-          </h2>
-          <ul className="text-center px-5 my-1">
-            <li className="my-2">
-              Biaya registrasi pendaftaran Rp. 500.000 dibayarkan pada saat
-              mendaftar
-            </li>
-            <li className="my-2">
-              Biaya Awal Pelatihan Rp. 10.500.000,- harus sudah dibayar paling
-              lambat dihari pertama pelatihan dimulai
-            </li>
-            <li className="my-2">
-              Angsuran II Rp. 2.500.000,- dibayarkan diawal bulan kedua masa
-              pelatihan
-            </li>
-            <li className="my-2">
-              Angsuran III Rp. 2.500.000,- harus sudah dilunasi di awal bulan
-              ketiga masa pelatihan ( paling lambat sebelum masa OJT di hotel )
-            </li>
-          </ul>
         </div>
       </div>
     </div>

@@ -1,16 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { data } from "autoprefixer";
+import Title from "./Title";
 
 export default function Elicrew() {
-  const why = [
+  const datas = [
     {
-      image: "/img/imgeli/bookNewWhite.png",
-      title: "Materi",
-      benefit:
-        "Materi pelatihan yang selalu diupdate sesusai kondisi materi terkini",
-    },
-    {
-      image: "/img/imgeli/mentorshipWhite.png",
+      image: "/img/elicrew/mentor.jpeg",
       title: "Mentor",
       benefit: "Dipandu sarjana pendidikan bahasa asing yang bersertifikat ",
     },
@@ -19,30 +15,24 @@ export default function Elicrew() {
       title: "OJT",
       benefit: "Penempatan Magang di hotel baik hotel dalam maupun luar negeri",
     },
+
     {
-      image: "/img/imgeli/relationshipWhite.png",
-      title: "Relasi",
-      benefit:
-        "Jalinan kemitraan yang sangat luas hampir di seluruh hotel dan kapal pesiar",
-    },
-    {
-      image: "/img/imgeli/staffWhite.png",
-      title: "Didampingi",
-      benefit:
-        "Didampingi mulai dari masa latihan s/d diterima di kapal pesiar",
-    },
-    {
-      image: "/img/imgeli/passportWhite.png",
-      title: "Doc",
+      image: "/img/elicrew/trip.jpg",
+      title: "Document",
       benefit: "Dibantu proses document terkait BST, Seaman Book Passport",
     },
     {
-      image: "/img/imgeli/moneyWhite.png",
+      image: "/img/elicrew/seragam.jpg",
       title: "Benefit",
       benefit: "Bebas uang gedung, SPP , 3 seragam dan biaya praktek hotel",
     },
     {
-      image: "/img/imgeli/houseBone.png",
+      image: "/img/elicrew/mitra.jpg",
+      title: "Benefit",
+      benefit: "Bebas uang gedung, SPP , 3 seragam dan biaya praktek hotel",
+    },
+    {
+      image: "/img/elicrew/mess.jpeg",
       title: "Mess",
       benefit:
         "Khusus untuk peserta luar kota disediakan mess, air dan listrik gratis",
@@ -50,67 +40,56 @@ export default function Elicrew() {
   ];
 
   return (
-    <div className="py-5">
-      <div className="flex w-full justify-center items-center gap-4 pt-2 xl:pb-5">
-        <hr className="w-10 mb-3 h-2 bg-textPrimary rounded-md" />
-
-        <h2 className="text-2xl pb-3 sm:pb-6 lg:text-4xl lg:pb-3 font-semibold text-primary">
-          Mengapa ELi Crew
-        </h2>
-        <hr className="w-10 mb-3 h-2 bg-textPrimary rounded-md" />
-      </div>
-
-      <div className="container flex mx-auto flex-wrap mt-3 gap-2 md:gap-4">
-        {why.map((user, index) => (
+    <div className="bg-slate-100 w-full">
+      <Title title="Mengapa Harus Eli Crew" />
+      <div className="container mx-auto grid grid-cols-1 gap-3 md:gap-5 lg:grid-cols-3 md:grid-cols-2 py-5">
+        {datas.map((data, index) => (
           <div
-            className="bg-primary max-w-[20rem] rounded-md shadow-md mx-auto p-4 sm:flex sm:max-w-lg sm:gap-3 md:max-w-3xl lg:max-w-md xl:max-w-xl 2xl:max-w-2xl "
             key={index}
+            className=" max-w-lg sm:max-w-xl sm:flex md:block  sm:items-center overflow-hidden bg-white border border-gray-200 rounded-lg shadow "
           >
-            <Image
-              src={user.image}
-              width={500}
-              height={500}
-              quality={100}
-              alt="img"
-              className="w-36 sm:w-32 md:w-36 mx-auto object-cover bg-center"
-            />
-            <div className="p-3">
-              <h1 className="text-2xl font-semibold text-textSecondary tracking-wider md:text-4xl">
-                {user.title}
-              </h1>
-              <h4 className="text-xl md:text-2xl text-white mt-1">
-                {user.benefit}
-              </h4>
+            <a href="#">
+              <Image
+                className=" rounded-t-lg  sm:rounded-none h-72 object-cover object-center"
+                src={data.image}
+                width={500}
+                height={500}
+                alt="Cruise"
+                priority={true}
+              />
+            </a>
+            <div className="p-5 sm:p-10">
+              <a href="#">
+                <h5 className="mb-2 text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  {data.title}
+                </h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 sm:text-xl">
+                {data.benefit}
+              </p>
+              <a
+                href="#"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  aria-hidden="true"
+                  className="w-4 h-4 ml-2 -mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </a>
             </div>
           </div>
         ))}
       </div>
-      {/* <div className="grid grid-cols-2 gap-2 px-2 py-2 md:grid-cols-3 xl:grid-cols-4">
-        {why.map((user, index) => (
-          <div
-            className="aspect-[3/4] sm:pt-5 p-3 shadow-xl bg-primary flex flex-col justify-start items-center "
-            key={index}
-          >
-            {/* <img src={user.image} alt="" className="" /> */}
-      {/* <Image
-              src={user.image}
-              width={500}
-              height={500}
-              quality={100}
-              alt="img"
-              className=" pt-2 w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36"
-            />
-            <div className="pt-1">
-              <h1 className="p-1 font-bold tracking-wider mt-3 text-center text-2xl text-textPrimary sm:text-4xl 2xl:text-5xl">
-                {user.title}
-              </h1>
-              <h2 className="text-center text-textSecondary sm:text-xl text-lg mt-2  lg:text-2xl 2xl:text-3xl 2xl:mt-4 2xl:leading-normal">
-                {user.benefit}
-              </h2>
-            </div>
-          </div>
-        ))} */}
-      {/* </div> */}
     </div>
   );
 }

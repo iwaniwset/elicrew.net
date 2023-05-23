@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import Title from "./Title";
 
 const images = [
   {
@@ -120,107 +121,106 @@ const images = [
 
 export default function Gallery() {
   return (
-    // <div className="bg-blue-300 p-5">
-    //   <h1 className="py-5 tracking-wide text-3xl text-slate-800 text-center">
-
-    //   </h1>
-    //   <div className="grid grid-cols-2 md:grid-cols-3 gap-4 self-center">
-    //     {images.map((image, index) => (
-    //       <div key={index}>
-    //         <Image
-    //           src={image.imageUrl}
-    //           alt="imageGallery"
-    //           width={100}
-    //           quality={100}
-    //           height={100}
-    //           priority={true}
-    //           // objectFit={cover}
-    //           className="h-full w-full rounded-lg shadow-lg object-cover"
-    //         />{" "}
-    //       </div>
-    //     ))}
-    //   </div>
-    // </div>
-    <div className="container">
-      <div className="pt-5 lg:hidden">
-        <div className="flex w-full justify-center items-center gap-4 pt-2 xl:pb-5">
-          <hr className="w-10 mb-3 h-2 bg-textPrimary rounded-md" />
-
-          <h2 className="text-3xl pb-3 sm:pb-6 lg:text-4xl lg:pb-3 font-semibold text-primary">
-            Our Students
-          </h2>
-          <hr className="w-10 mb-3 h-2 bg-textPrimary rounded-md" />
+    <div>
+      <div className="hidden xl:block bg-gradient-to-t  from-primary to-sky-500 ">
+        <div className="pt-5 container flex flex-col justify-center items-center py-16 ">
+          <Title title="Our Student" />
+          <Splide
+            options={{
+              type: "loop",
+              gap: 10,
+              perPage: 3,
+              perMove: 2,
+              autoplay: true,
+              pauseOnHover: false,
+              resetProgress: false,
+              arrows: true,
+              pagination: false,
+            }}
+            aria-label="My Favorite Images"
+          >
+            {images.map((image, index) => (
+              <SplideSlide className="w-full    relative " key={index}>
+                {/* <img src="image1.jpg" alt="Image 1" /> */}
+                <Image
+                  className="w-full h-96 drop-shadow-xl rounded-lg object-cover object-center"
+                  src={image.imageUrl}
+                  width={1000}
+                  height={1000}
+                  alt="Cruise"
+                  priority={true}
+                />
+              </SplideSlide>
+            ))}
+          </Splide>
         </div>
-        <Splide
-          options={{
-            type: "loop",
-            perPage: 1,
-            perMove: 1,
-            autoplay: true,
-            pauseOnHover: false,
-            resetProgress: false,
-            arrows: false,
-            pagination: false,
-          }}
-          aria-label="My Favorite Images"
-        >
-          {images.map((image, index) => (
-            <SplideSlide
-              className="w-full p-5  xl:h-[37rem] relative "
-              key={index}
-            >
-              {/* <img src="image1.jpg" alt="Image 1" /> */}
-              <Image
-                className="w-full h-96 md:h-[30rem] object-cover object-center"
-                src={image.imageUrl}
-                width={1000}
-                height={1000}
-                alt="Cruise"
-                priority={true}
-              />
-            </SplideSlide>
-          ))}
-        </Splide>
       </div>
-      <div className="pt-5 hidden lg:block">
-        <div className="flex w-full justify-center items-center gap-4 pt-2 xl:pb-5">
-          <hr className="w-10 mb-3 h-2 bg-textPrimary rounded-md" />
-
-          <h2 className="text-3xl pb-3 sm:pb-6 lg:text-4xl lg:pb-3 font-semibold text-primary">
-            Our Students
-          </h2>
-          <hr className="w-10 mb-3 h-2 bg-textPrimary rounded-md" />
+      <div className=" hidden md:block xl:hidden bg-gradient-to-t  from-primary to-sky-500 ">
+        <div className="pt-5 container flex flex-col justify-center items-center py-16 ">
+          <Title title="Our Student" />
+          <Splide
+            options={{
+              type: "loop",
+              gap: 10,
+              perPage: 2,
+              perMove: 2,
+              autoplay: true,
+              pauseOnHover: false,
+              resetProgress: false,
+              arrows: true,
+              pagination: false,
+            }}
+            aria-label="My Favorite Images"
+          >
+            {images.map((image, index) => (
+              <SplideSlide className="w-full    relative " key={index}>
+                {/* <img src="image1.jpg" alt="Image 1" /> */}
+                <Image
+                  className="w-full h-96 drop-shadow-xl rounded-lg object-cover object-center"
+                  src={image.imageUrl}
+                  width={1000}
+                  height={1000}
+                  alt="Cruise"
+                  priority={true}
+                />
+              </SplideSlide>
+            ))}
+          </Splide>
         </div>
-        <Splide
-          options={{
-            type: "loop",
-            perPage: 2,
-            perMove: 1,
-            autoplay: true,
-            pauseOnHover: false,
-            resetProgress: false,
-            arrows: false,
-            pagination: false,
-          }}
-          aria-label="My Favorite Images"
-        >
-          {images.map((image, index) => (
-            <SplideSlide
-              className="w-full p-5  xl:h-[37rem] relative "
-              key={index}
-            >
-              {/* <img src="image1.jpg" alt="Image 1" /> */}
-              <Image
-                className="w-full h-[34rem] object-cover object-center"
-                src={image.imageUrl}
-                width={1000}
-                height={1000}
-                alt="Cruise"
-                priority={true}
-              />
-            </SplideSlide>
-          ))}
-        </Splide>
+      </div>
+
+      <div className="bg-gradient-to-t md:hidden from-primary to-sky-500 ">
+        <div className="pt-5 container flex flex-col justify-center items-center py-16 ">
+          <Title title="Our Student" />
+          <Splide
+            options={{
+              type: "loop",
+              gap: 10,
+              perPage: 1,
+              perMove: 2,
+              autoplay: true,
+              pauseOnHover: false,
+              resetProgress: false,
+              arrows: true,
+              pagination: false,
+            }}
+            aria-label="My Favorite Images"
+          >
+            {images.map((image, index) => (
+              <SplideSlide className="w-full    relative " key={index}>
+                {/* <img src="image1.jpg" alt="Image 1" /> */}
+                <Image
+                  className="w-full h-96 drop-shadow-xl rounded-lg object-cover object-center"
+                  src={image.imageUrl}
+                  width={1000}
+                  height={1000}
+                  alt="Cruise"
+                  priority={true}
+                />
+              </SplideSlide>
+            ))}
+          </Splide>
+        </div>
       </div>
     </div>
   );

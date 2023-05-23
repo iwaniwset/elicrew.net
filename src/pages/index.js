@@ -8,7 +8,10 @@ import Elicrew from "@/components/Elicrew";
 import Program from "@/components/Program";
 import Gallery from "@/components/Gallery";
 import Maps from "@/components/Maps";
+import Pencapaian from "@/components/Pencapaian";
+import Closing from "../components/Closing";
 import Footer from "@/components/Footer";
+// import Workinghour from "@/components/workinghour";
 
 export default function Home() {
   // const [active, setActive] = useState(false);
@@ -29,11 +32,14 @@ export default function Home() {
       <div className=" w-full">
         {/* <Navbar /> */}
         {/* <NavbarMenu /> */}
+        {/* <Workinghour /> */}
         <Hero />
-        <About />
         <Elicrew />
-        <Program />
+        <About />
+        <Pencapaian />
         <Gallery />
+        <Closing />
+        <Program />
         <Maps />
         <Footer />
       </div>
