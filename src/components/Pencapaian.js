@@ -7,7 +7,7 @@ export default function Pencapaian() {
     <div className=" ">
       <Title title="Pencapaian" />
 
-      <div className="lg:flex   ">
+      <div className="lg:flex lg:container   ">
         <div className="container mx-auto text-center px-2 py-5 md:p-16 lg:py-16 lg:pr-16 lg:pl-0 xl:py-10 xl:pr-10 xl:pl-0  lg:text-left">
           <h1 className="text-3xl sm:text-4xl font-semibold text-transparent md:uppercase bg-clip-text bg-gradient-to-t from-primary  to-sky-500 xl:text-5xl">
             Sejak 2005, Telah Sukses membantu ribuan siswa berangkat bekerja di
