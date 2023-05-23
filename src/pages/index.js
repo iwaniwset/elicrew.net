@@ -37,7 +37,7 @@ export default function Home() {
         <Elicrew />
         <About />
         <Pencapaian />
-        <Gallery />
+        {/* <Gallery /> */}
         <Closing />
         <Program />
         <Maps />
