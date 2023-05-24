@@ -11,7 +11,7 @@ export default function Elicrew() {
       benefit: "Dipandu sarjana pendidikan bahasa asing yang bersertifikat ",
     },
     {
-      image: "/img/imgeli/hotelWhite.png",
+      image: "/img/elicrew/magang2.jpg",
       title: "OJT",
       benefit: "Penempatan Magang di hotel baik hotel dalam maupun luar negeri",
     },
@@ -28,8 +28,9 @@ export default function Elicrew() {
     },
     {
       image: "/img/elicrew/mitra.jpg",
-      title: "Benefit",
-      benefit: "Bebas uang gedung, SPP , 3 seragam dan biaya praktek hotel",
+      title: "Dipandu",
+      benefit:
+        "Dipandu dari mulai pendaftaran, sampai siap bekerja di kapal pesiar",
     },
     {
       image: "/img/elicrew/mess.jpeg",

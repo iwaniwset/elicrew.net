@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import Link from "next/link";
 
 export default function Hero() {
   // const images = ["/img/logo2.jpg", "/img/logo3.jpg", "/img/logo5.jpg"];
@@ -51,10 +52,13 @@ export default function Hero() {
             (6Bulan) & Program Reguler (10Bulan)
           </h4>
 
-          <div className="w-full  lg:max-w-4xl mx-auto  ">
-            <button className="w-full mt-5 rounded-md py-2 sm:py-3 bg bg-gradient-to-r from-amber-500 via-text to-amber-500 text-lg sm:text-xl uppercase tracking-wider font-semibold shadow-lg text-slate-900 md:px-16 lg:text-2xl lg:max-w-xs  lg:mx-auto xl:w-64">
-              Join Us !!
-            </button>
+          <div className="w-full lg:max-w-4xl xl:w-96 xl:mx-0 container mx-auto mt-5 flex justify-center rounded-md py-2 sm:py-3 bg bg-gradient-to-r from-amber-500 via-text to-amber-500 shadow-lg ">
+            <Link
+              href="https://wa.link/25ms0g"
+              className="w-full  text-lg sm:text-xl text-center uppercase tracking-wider font-semibold  text-slate-900 md:px-16 lg:text-2xl lg:max-w-xs  lg:mx-auto xl:w-64"
+            >
+              More Info
+            </Link>
           </div>
         </div>
       </div>

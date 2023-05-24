@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const benefits = [
   {
@@ -85,8 +86,8 @@ export default function About() {
             dengan fasilitas.
           </h2>
           {benefits.map((benefit, index) => (
-            <ul className="px-5" key={index}>
-              <li className="flex gap-2 items-center">
+            <ul className="px-1" key={index}>
+              <li className="flex gap-2 items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -106,7 +107,9 @@ export default function About() {
             </ul>
           ))}
           <button className="w-full  md:mt-10 bg-amber-500 text-textSecondary font-bold py-2 mt-3 shadow-xl rounded-lg md:text-xl">
-            CEK HARGA
+            <Link className="w-full  block " href="/#program" scroll={true}>
+              CEK HARGA
+            </Link>
           </button>
         </div>
         <div className=" lg:relative lg:flex lg:justify-center lg:items-center sm:container  sm:max-w-md mx-auto md:max-w-xl py-5">
